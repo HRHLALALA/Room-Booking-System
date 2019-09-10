@@ -1,0 +1,96 @@
+{
+    "nav": [
+        {
+            "name": "all",
+            "show": "所有"
+        },
+        {
+            "name": "todo",
+            "show": "待办"
+        },
+        {
+            "name": "rejected",
+            "show": "已拒接"
+        },
+        {
+            "name": "approved",
+            "show": "已同意"
+        },
+        {
+            "name": "saved",
+            "show": "保存"
+        }
+    ],
+    "search": {
+        "name": "search",
+        "show": "Search"
+    },
+    "toggle": {
+        "name": "toggle",
+        "show": "点击切换菜单"
+    },
+    "card": {
+        "date": {
+            "name": "date",
+            "show": "日期"
+        },
+        "location": {
+            "name": "location",
+            "show": "地点"
+        },
+        "duration": {
+            "name": "duration",
+            "show": "区间段"
+        },
+        "ngroup": {
+            "name": "ngroup",
+            "show": "人数"
+        },
+        "repeat": {
+            "name": "repeat",
+            "show": "重复"
+        },
+        "type": {
+            "name": "type",
+            "show": "类型"
+        },
+        "comment": {
+            "name": "comment",
+            "show": "注释"
+        },
+        "buttons": {
+            "approve": {
+                "name": "approve",
+                "show": "同意"
+            },
+            "reject": {
+                "name": "reject",
+                "show": "拒绝"
+            },
+            "save": {
+                "name": "save",
+                "show": "保存"
+            }
+        }
+    },
+    "modal": {
+        "approve": {
+            "title": "确认同意",
+            "body": "您确定同意这项预定吗?"
+        },
+        "reject": {
+            "title": "确认拒绝",
+            "body": "您确定拒绝这项预定吗?"
+        },
+        "buttons": {
+            "confirm": {
+                "name": "confirm",
+                "show": "确认"
+            },
+            "cancel": {
+                "name": "cancel",
+                "show": "取消"
+            }
+        }
+    }
+}

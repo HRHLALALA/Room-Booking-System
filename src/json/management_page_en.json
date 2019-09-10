@@ -1,0 +1,92 @@
+{
+    "nav": [
+        {
+            "name": "all",
+            "show": "All"
+        },
+        {
+            "name": "todo",
+            "show": "Todo"
+        },
+        {
+            "name": "rejected",
+            "show": "Rejected"
+        },
+        {
+            "name": "approved",
+            "show": "Approved"
+        },
+        {
+            "name": "saved",
+            "show": "Saved"
+        }
+    ],
+    "toggle": {
+        "name": "toggle",
+        "value": "Toggle Menue"
+    },
+    "card": {
+        "date": {
+            "name": "date",
+            "show": "Date"
+        },
+        "location": {
+            "name": "location",
+            "show": "Location"
+        },
+        "duration": {
+            "name": "duration",
+            "show": "Duration"
+        },
+        "ngroup": {
+            "name": "ngroup",
+            "show": "Number of Group"
+        },
+        "repeat": {
+            "name": "repeat",
+            "show": "Repeat"
+        },
+        "type": {
+            "name": "type",
+            "show": "Type"
+        },
+        "comment": {
+            "name": "comment",
+            "show": "Comment"
+        },
+        "buttons": {
+            "approve": {
+                "name": "approve",
+                "show": "Approve"
+            },
+            "reject": {
+                "name": "reject",
+                "show": "Reject"
+            },
+            "save": {
+                "name": "save",
+                "show": "Save"
+            }
+        }
+    },
+    "modal": {
+        "approve": {
+            "title": "Approvement Confirmation",
+            "body": "Are you sure you want to approve this reservation?"
+        },
+        "reject": {
+            "title": "Reject Confirmation",
+            "body": "Are you sure you want to reject this reservation?"
+        },
+        "buttons": {
+            "confirm": {
+                "name": "confirm",
+                "show": "confirm"
+            },
+            "cancel": {
+                "name": "cancel",
+                "show": "cancel"
+            }
+        }
+    }
+}

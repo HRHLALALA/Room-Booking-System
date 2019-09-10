@@ -1,0 +1,46 @@
+{
+    "room": 202,
+    "date": "2019-02-02",
+    "capacity": 5,
+    "maxRepeatDays": 5,
+    "time_slots": [
+        {
+            "label": "1:00-2:00",
+            "value": "1"
+        },
+        {
+            "label": "2:00-3:00",
+            "value": "2"
+        },
+        {
+            "label": "3:00-4:00",
+            "value": "3"
+        },
+        {
+            "label": "4:00-5:00",
+            "value": "4"
+        },
+        {
+            "label": "5:00-6:00",
+            "value": "5"
+        },
+        {
+            "label": "6:00-7:00",
+            "value": "6"
+        },
+        {
+            "label": "7:00-8:00",
+            "value": "7"
+        }
+    ],
+    "meeting_type": [
+        {
+            "label": "Tutorial",
+            "value": "tutorial"
+        },
+        {
+            "label": "Conversation",
+            "value": "coversation"
+        }
+    ]
+}

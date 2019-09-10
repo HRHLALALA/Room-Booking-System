@@ -1,0 +1,155 @@
+[
+    {
+        "location": "unit 1",
+        "rooms": [
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 201,
+                "location": "unit 1",
+                "priority": 1,
+                "capacity": 2,
+                "available_slots": [
+                    "2:00-3:00",
+                    "4:30-24:30"
+                ],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 202,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [
+                    "4:00-6:00",
+                    "4:30-6:30"
+                ],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 203,
+                "location": "unit 1",
+                "capacity": 4,
+                "priority": 1,
+                "available_slots": [
+                    "2:00-3:00",
+                    "4:00-7:00"
+                ],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 204,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 205,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 206,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 207,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 208,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 1,
+                "roomid": 2,
+                "room": 209,
+                "location": "unit 1",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            }
+        ]
+    },
+    {
+        "location": "unit 2",
+        "rooms": [
+            {
+                "id": 3,
+                "roomid": 4,
+                "room": 104,
+                "location": "unit 2",
+                "capacity": 2,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            },
+            {
+                "id": 4,
+                "roomid": 2,
+                "room": 204,
+                "location": "unit 2",
+                "capacity": 3,
+                "priority": 1,
+                "available_slots": [],
+                "facilities": "HDML, Cable, White Board"
+            }
+        ]
+    },
+    {
+        "location": "unit 4",
+        "rooms": []
+    },
+    {
+        "location": "unit 5",
+        "rooms": []
+    },
+    {
+        "location": "unit 6",
+        "rooms": []
+    },
+    {
+        "location": "unit 7",
+        "rooms": []
+    },
+    {
+        "location": "unit 8",
+        "rooms": []
+    },
+    {
+        "location": "unit 9",
+        "rooms": []
+    }
+]

@@ -1,0 +1,87 @@
+#ManagementPage{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+#ManagementPage  .room-grid{
+    width:25%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    font-size:1.5vh;
+    
+}
+.table{
+    margin-bottom: 0;
+}
+#ManagementPage #NavBar{
+    height:10%;
+
+}
+
+#ManagementPage .row{
+    height:90%;
+    position: relative;
+    
+    
+}
+
+#ManagementPage .left{
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    text-align: center;
+    
+
+}
+#ManagementPage  #CardDeck{
+    padding:5%;
+    height:100%;
+    
+    
+
+}
+#ManagementPage .ToggleButton{
+    display:none;
+}
+
+#ManagementPage .right{
+    padding:2.5%;
+    padding-bottom: 5%;
+    min-height:200px;
+    
+}
+
+
+
+#ManagementPage  #Pagination-block{
+    display: flex;
+    justify-content:center;
+    bottom: 0;
+ 
+    left:50%;
+    right:50%;
+    
+}
+
+
+@media screen and (max-width:887px){
+    #ManagementPage{
+        height:auto;
+    }
+    #ManagementPage .ToggleButton{
+        display:block;
+        width:100%;
+    }
+    #ManagementPage  #CardDeck{
+        padding:5%;
+        height:100%;
+        width:100%;
+        
+        
+    }
+    #ManagementPage  .room-grid{
+        width:100%;
+        min-width: 200px;
+        margin-bottom: 20px;
+        
+    }
+}

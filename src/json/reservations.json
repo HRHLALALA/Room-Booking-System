@@ -1,0 +1,41 @@
+{
+    "my_reservations": [
+        {
+            "id": 1,
+            "when": "2019-9-10",
+            "duration": "2:30 - 4:30",
+            "where": "Room 201",
+            "state": 0
+        },
+        {
+            "id": 2,
+            "when": "2019-9-11",
+            "duration": "2:40 - 4:30",
+            "where": "Room 201",
+            "state": 1
+        },
+        {
+            "id": 3,
+            "when": "2019-9-11",
+            "duration": "2:30 - 4:30",
+            "where": "Room 202",
+            "state": -1
+        }
+    ],
+    "my_saved_rooms": [
+        {
+            "id": 1,
+            "room": 202,
+            "capacity": 3,
+            "facilities": "HDML,White board",
+            "last_reservation": "2019-02-03"
+        },
+        {
+            "id": 2,
+            "room": 203,
+            "capacity": 3,
+            "facilities": "HDML,White board",
+            "last_reservation": "2019-02-04"
+        }
+    ]
+}

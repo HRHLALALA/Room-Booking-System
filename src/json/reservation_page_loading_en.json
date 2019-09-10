@@ -1,0 +1,175 @@
+{
+    "meeting_room_content": {
+        "search": {
+            "content": [
+                {
+                    "name": "timeslot",
+                    "show": "Time slot",
+                    "example": "E.g. 2:00am-3:00pm, 2:00 - 15:00"
+                },
+                {
+                    "name": "capacity",
+                    "show": "Capacity",
+                    "example": "E.g. 1"
+                },
+                {
+                    "name": "location",
+                    "show": "Location",
+                    "example": "E.g. Building 1"
+                }
+            ],
+            "button": {
+                "type": "search"
+            }
+        },
+        "card": {
+            "card_titles": {
+                "room":{
+                    "name": "room",
+                    "show": "Room"
+                },
+                "location":{
+                    "name": "location",
+                    "show": "Location"
+                }
+            },
+            "tooltip_titles": {
+                "h": {
+                    "name": "room",
+                    "show": "Room"
+                },
+                "li-1": [
+                    {
+                        "name": "location",
+                        "show": "Location"
+                    },
+                    {
+                        "name": "capacity",
+                        "show": "Capacity"
+                    },
+                    {
+                        "name": "facilities",
+                        "show": "Facilities"
+                    }
+                ],
+                "li-2": [
+                    {
+                        "name": "available_slots",
+                        "show": "Available Time Slots"
+                    }
+                ]
+            },
+            "button": {
+                "type": "save"
+            }
+        }
+    },
+    "my_reservations_content": {
+        "my_reservation": {
+            "title": {
+                "name": "my_reservation",
+                "show": "My Reservations"
+            },
+            "toast": {
+                "date": {
+                    "name": "date",
+                    "show": "Date"
+                },
+                "duration": {
+                    "name": "duration",
+                    "show": "Duration"
+                },
+                "state": {
+                    "name": "state",
+                    "show": "State"
+                }
+            }
+        },
+        "my_saved_rooms": {
+            "title": {
+                "name": "my_saved_rooms",
+                "show": "My Saved Rooms"
+            },
+            "toast": {
+                "capacity": {
+                    "name": "capacity",
+                    "show": "Capacity"
+                },
+                "facilities": {
+                    "name": "facilities",
+                    "show": "Facilities"
+                },
+                "last_reservation": {
+                    "name": "last_reservation",
+                    "show": "Last Reservation"
+                }
+            }
+        },
+        "modal": {
+            "reservation": {
+                "head": "Cancel Reservations",
+                "body": "Do you want to cancel your reservation?"
+            },
+            "saved": {
+                "head": "Delete Saved",
+                "body": "Do you want to delete this saved room?"
+            }
+        }
+    },
+    "reservation_form": {
+        "title": {
+            "name": "title",
+            "show": "Reservation Form"
+        },
+        "room": {
+            "name": "room",
+            "show": "Room"
+        },
+        "date": {
+            "name": "date",
+            "show": "Date"
+        },
+        "duration": {
+            "name": "duration",
+            "show": "Duration"
+        },
+        "ngroup": {
+            "name": "ngroup",
+            "show": "Number of Group"
+        },
+        "repeat": {
+            "name": "repeat",
+            "show": "Repeat",
+            "selections": [
+                "No repeat",
+                "Weekly",
+                "Monthly",
+                "Yearly"
+            ]
+        },
+        "repeat_times": {
+            "name": "repeat_times",
+            "show": "Repeat times"
+        },
+        "comment": {
+            "name": "comment",
+            "show": "Comment",
+            "placeholder": "Max 500 characters",
+            "text": "Please write your reasons why need to make this reservation",
+            "feedback": "Please provide some comments. Otherwise, this reservation cannot be approved"
+        },
+        "agreement": {
+            "message": "I agree with the ",
+            "link": "terms and conditions",
+            "feedback": "You must agree before submitting."
+        },
+        "meeting_type": {
+            "name": "meeting_type",
+            "show": "Meeting type"
+        },
+        "submit": {
+            "name": "submit",
+            "show": "Submit"
+        }
+    }
+}

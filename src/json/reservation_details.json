@@ -1,0 +1,179 @@
+[
+    {
+        "location": "unit 1",
+        "rooms": [
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": "Monthly 3 times",
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 1,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 1",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            }
+        ]
+    },
+    {
+        "location": "unit 2",
+        "rooms": [
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 2",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            },
+            {
+                "id": 0,
+                "roomid": 4,
+                "room": 204,
+                "date": "2019-03-03",
+                "location": "unit 2",
+                "capacity": 4,
+                "duration": "10:00-12:00, 13:00-14:00",
+                "ngroups": 3,
+                "repeat": 3,
+                "type": "tutorial",
+                "comments": "Use for study"
+            }
+        ]
+    },
+    {
+        "location": "unit4",
+        "rooms": []
+    },
+    {
+        "location": "unit5",
+        "rooms": []
+    },
+    {
+        "location": "unit6",
+        "rooms": []
+    },
+    {
+        "location": "unit7",
+        "rooms": []
+    },
+    {
+        "location": "unit8",
+        "rooms": []
+    },
+    {
+        "location": "unit9",
+        "rooms": []
+    }
+]

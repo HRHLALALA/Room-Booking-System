@@ -1,0 +1,174 @@
+{
+    "meeting_room_content": {
+        "search": {
+            "content": [
+                {
+                    "name": "timeslot",
+                    "show": "时间段",
+                    "example": "例：2:00am-3:00pm, 2:00 - 15:00"
+                },
+                {
+                    "name": "capacity",
+                    "show": "容量",
+                    "example": "例 1"
+                },
+                {
+                    "name": "location",
+                    "show": "地点",
+                    "example": "例 楼1"
+                }
+            ],
+            "button": {
+                "type": "搜索"
+            }
+        },
+        "card": {
+            "card_titles": {
+                "room": {
+                    "name": "room",
+                    "show": "房间名"
+                },
+                "location": {
+                    "name": "location",
+                    "show": "地点"
+                }
+            },
+            "tooltip_titles": {
+                "h": {
+                    "name": "room",
+                    "show": "房间名"
+                },
+                "li-1": [
+                    {
+                        "name": "location",
+                        "show": "地点"
+                    },
+                    {
+                        "name": "capacity",
+                        "show": "容量"
+                    },
+                    {
+                        "name": "facilities",
+                        "show": "设施"
+                    }
+                ],
+                "li-2": [
+                    {
+                        "name": "available_slots",
+                        "show": "可用时间段"
+                    }
+                ]
+            },
+            "button": {
+                "type": "保存"
+            }
+        }
+    },
+    "my_reservations_content": {
+        "my_reservation": {
+            "title": {
+                "name": "my_reservation",
+                "show": "我的预定"
+            },
+            "toast": {
+                "date": {
+                    "name": "date",
+                    "show": "日期"
+                },
+                "duration": {
+                    "name": "duration",
+                    "show": "期间"
+                },
+                "state": {
+                    "name": "state",
+                    "show": "状态"
+                }
+            }
+        },
+        "my_saved_rooms": {
+            "title": {
+                "name": "my_saved_rooms",
+                "show": "我保存的房间"
+            },
+            "toast": {
+                "capacity": {
+                    "name": "capacity",
+                    "show": "容量"
+                },
+                "facilities": {
+                    "name": "facilities",
+                    "show": "设施"
+                },
+                "last_reservation": {
+                    "name": "last_reservation",
+                    "show": "上次预定时间"
+                }
+            }
+        },
+        "modal": {
+            "reservation": {
+                "head": "Cancel Reservations",
+                "body": "你确定要取消预定吗？"
+            },
+            "saved": {
+                "head": "Delete Saved",
+                "body": "你确定要删除保存的此房间吗？"
+            }
+        }
+    },
+    "reservation_form": {
+        "title": {
+            "name": "title",
+            "show": "预定表单"
+        },
+        "room": {
+            "name": "room",
+            "show": "房间"
+        },
+        "date": {
+            "name": "date",
+            "show": "日期"
+        },
+        "duration": {
+            "name": "duration",
+            "show": "期间"
+        },
+        "ngroup": {
+            "name": "ngroup",
+            "show": "人数"
+        },
+        "repeat": {
+            "name": "repeat",
+            "show": "重复",
+            "selections": [
+                "没有重复",
+                "每周",
+                "每月",
+                "每年"
+            ]
+        },
+        "repeat_times": {
+            "name": "repeat_times",
+            "show": "重复次数"
+        },
+        "comment": {
+            "name": "comment",
+            "show": "评论",
+            "placeholder": "最多500字",
+            "text": "请填写预定原因"
+        },
+        "agreement": {
+            "message": "我同意 ",
+            "link": "相关条款",
+            "feedback": "请打勾后提交"
+        },
+        "meeting_type": {
+            "name": "meeting_type",
+            "show": "会议类型"
+        },
+        "submit": {
+            "name": "submit",
+            "show": "提交"
+        }
+    }
+}
