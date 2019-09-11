@@ -4,10 +4,11 @@ import MyReservation from './../Component/myReservation';
 import MeetingRooms from './../Component/MeetingRooms';
 import './BookingPage.css';
 import ReservationForm from './../Component/ReservationForm';
-import { Modal } from 'react-bootstrap';
+import { Modal, Navbar } from 'react-bootstrap';
 import roomlist from './../json/room.json';
 import content_en from './../json/reservation_page_loading_en.json';
 import content_cn from './../json/reservation_page_loading_cn.json';
+import logo from './../logo.png';
 class BookingPage extends React.Component {
     constructor(props) {
         super(props);
@@ -46,6 +47,7 @@ class BookingPage extends React.Component {
 
                     </div>
                 </div>
+
                 <MeetingRooms content={meeting_room_content} onClick={this.handleMeetingRoomCardClick.bind(this)}
                     className="MeetingRooms" selectDate={this.formatDate(this.state.date)}
                     roomlist={this.state.roomlist} />
@@ -66,7 +68,7 @@ class BookingPage extends React.Component {
                         </Modal.Body>
                     </Modal>
                 </div>
-            </div>
+            </div >
         );
     }
 

@@ -40,7 +40,7 @@
         },
         "ngroup": {
             "name": "ngroup",
-            "show": "Number of Group"
+            "show": "Number in Group"
         },
         "repeat": {
             "name": "repeat",

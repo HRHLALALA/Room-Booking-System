@@ -24,13 +24,13 @@
         },
         "card": {
             "card_titles": {
-                "room":{
+                "room": {
                     "name": "room",
                     "show": "Room"
                 },
-                "location":{
-                    "name": "location",
-                    "show": "Location"
+                "timeslot": {
+                    "name": "timeslot",
+                    "show": "Available slots"
                 }
             },
             "tooltip_titles": {
@@ -135,7 +135,7 @@
         },
         "ngroup": {
             "name": "ngroup",
-            "show": "Number of Group"
+            "show": "Number in Group"
         },
         "repeat": {
             "name": "repeat",

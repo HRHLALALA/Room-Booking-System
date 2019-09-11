@@ -65,30 +65,16 @@ class ReservationForm extends React.Component {
                                 {this.getNumberOptions(form_info.capacity)}
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group as={Col} controlId="formGridRepeat">
-                            <Form.Label>{content.repeat.show}</Form.Label>
-                            <Form.Control as="select" onChange={(value) => {
-                                /*Todo: change to call the fetch
-                                */
-                                const form_info_curr = this.state.form_info;
-                                form_info_curr.maxRepeatDays = value.currentTarget.value;
-                                this.setState({ maxRepeatDays: form_info_curr })
-                            }}>
-                                {content.repeat.selections.map((item, index) => <option value={index}>{item}</option>)}
-                            </Form.Control>
-                        </Form.Group>
+                        
                         <Form.Group as={Col} controlId="formGridRepeatTimes" >
-                            <Form.Label>{content.repeat_times.show}</Form.Label>
+                            <Form.Label>{content.meeting_type.show}</Form.Label>
                             <Form.Control as="select">
-                                {this.getNumberOptions(form_info.maxRepeatDays)}
+                                {form_info.meeting_type.map((item) => <option value={item.value} >{item.label}</option>)}
                             </Form.Control>
                         </Form.Group>
                     </Form.Row>
                     <Form.Group controlId="formGridMeetingType">
-                        <Form.Label>{content.meeting_type.show}</Form.Label>
-                        <Form.Control as="select">
-                            {form_info.meeting_type.map((item) => <option value={item.value} >{item.label}</option>)}
-                        </Form.Control>
+
                     </Form.Group>
                     <Form.Group controlId="formGridComment">
                         <Form.Label>{content.comment.show}</Form.Label>

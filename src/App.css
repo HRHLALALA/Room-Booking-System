@@ -10,3 +10,15 @@
     transform: rotate(360deg);
   }
 }
+#logoBar-mobile{
+  display: none;
+}
+
+@media screen and (max-width:768px){
+  #logoBar-mobile{
+      display: block;
+  }
+  #logoBar-computer{
+      display: none;
+  }
+}

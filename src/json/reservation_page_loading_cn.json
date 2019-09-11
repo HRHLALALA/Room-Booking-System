@@ -28,9 +28,9 @@
                     "name": "room",
                     "show": "房间名"
                 },
-                "location": {
-                    "name": "location",
-                    "show": "地点"
+                "timeslot": {
+                    "name": "timeslot",
+                    "show": "时间段"
                 }
             },
             "tooltip_titles": {

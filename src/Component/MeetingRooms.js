@@ -1,9 +1,10 @@
 import React from 'react';
 import Tooltip from 'react-tooltip';
-import { Overlay, Tabs, Pagination, Tab, Card, CardDeck, FormControl, InputGroup, Dropdown, DropdownButton, Button } from 'react-bootstrap';
+import { Overlay, Navbar, Tabs, Pagination, Tab, Card, CardDeck, FormControl, InputGroup, Dropdown, DropdownButton, Button } from 'react-bootstrap';
 import img from './../conference_room.jpeg';
 import Form from 'react-bootstrap/FormGroup';
 
+import logo from './../logo.png';
 class MeetingRooms extends React.Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,7 @@ class MeetingRooms extends React.Component {
             currentlocation: 0,
             roomlist: this.props.roomlist,
             currentPage: 1,
-            maxRoom: 8,
+            maxRoom: 6,
         }
     }
     componentDidMount() {
@@ -25,6 +26,12 @@ class MeetingRooms extends React.Component {
         const search = this.state.content.search;
         return (
             <div className={this.props.className}>
+                <Navbar id="logoBar-computer" expand="sm" >
+                    <Navbar.Brand className="mx-auto" href="#home">
+                        <img src={logo}>
+                        </img>
+                    </Navbar.Brand>
+                </Navbar>
                 <div>
                     <Form>
                         <InputGroup className="mb-3">
@@ -53,7 +60,7 @@ class MeetingRooms extends React.Component {
                 </div>
                 <div id="room-bar">
                     <Tabs className="justify-content-center" defaultActiveKey="0"
-                        justify onSelect={(eventKey, event) => {
+                        fill onSelect={(eventKey, event) => {
                             console.log(eventKey);
                             this.setState({
                                 currentlocation: eventKey,
@@ -66,19 +73,19 @@ class MeetingRooms extends React.Component {
                             >
                                 <CardDeck id="CardDeck">
                                     {this.getRoomCards(item, locationIndex)}
+                                    <div id="Pagination-block" >
 
+                                        <Pagination size="sm" id="Pagination">
+                                            {this.getPagination()}
+                                        </Pagination>
+                                    </div>
                                 </CardDeck>
                             </Tab>
                         )}
                     </Tabs>
                 </div>
 
-                <div id="Pagination-block" >
 
-                    <Pagination size="sm" id="Pagination">
-                        {this.getPagination()}
-                    </Pagination>
-                </div>
 
             </div >
         );
@@ -124,13 +131,13 @@ class MeetingRooms extends React.Component {
         else
             start = 2;
 
-        if (currentPage + 3 >= max) {
+        if (currentPage + 2 >= max) {
             this.getPaginationFromPageNumbers(items, start, max);
         }
         else {
-            this.getPaginationFromPageNumbers(items, start, currentPage + 3);
+            this.getPaginationFromPageNumbers(items, start, currentPage + 2);
             items.push(<Pagination.Ellipsis />);
-            start = currentPage + 4 >= max - 3 ? currentPage + 4 : max - 3;
+            start = currentPage + 3 >= max - 2 ? currentPage + 3 : max - 2;
             this.getPaginationFromPageNumbers(items, start, max);
         }
 
@@ -172,18 +179,32 @@ class MeetingRooms extends React.Component {
             items.push(<div className="room-grid">
                 <Card border="primary" style={{ cursor: "pointer" }}
                     id={room.roomid}
-                    data-tip={`${locationIndex}|${roomIndex}`}
                     onDoubleClick={() => this.props.onClick(roomIndex)}
-                    data-for="room">
-                    <Card.Img variant="top" src={img} />
+                >
+                    <Card.Img data-tip={`${locationIndex}|${roomIndex}`} data-for="room" variant="top" src={img} />
                     <Card.Body>
-                        <Card.Title>
-                            {card_content.card_titles.room.show}: {room.room}
+                        <Card.Title data-tip={`${locationIndex}|${roomIndex}`} data-for="room">
+                            {room.room}
                         </Card.Title>
-                        <Card.Text>
-                            {card_content.card_titles.location.show} : {room.location}<br></br>
+                        <Card.Text data-tip={`${locationIndex}|${roomIndex}`} data-for="room">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td width="auto" valign="top">
+                                            {/* {card_content.card_titles.timeslot.show} : */}
+                                            Available slots:
+                                        </td>
+                                        <td>
+                                            {room.available_slots.map((item) => <strong>{item}<br /></strong>)}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </Card.Text>
-                        <Button variant="link">Save</Button>
+                        <Card.Footer>
+                            <Button className="float-left" variant="link">Save</Button>
+                            <Button className="float-right" variant="link" onClick={() => this.props.onClick(roomIndex)} >Reserve</Button>
+                        </Card.Footer>
                     </Card.Body>
 
                 </Card>
@@ -194,7 +215,7 @@ class MeetingRooms extends React.Component {
                         this.getRoomInfoFromDataTip(dataTip)}
                 />
 
-            </div>)
+            </div >)
         }
         return items;
 
