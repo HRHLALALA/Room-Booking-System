@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/Room-Booking-System/static/css/main.c9938009.chunk.css",
-    "main.js": "/Room-Booking-System/static/js/main.f7681320.chunk.js",
-    "main.js.map": "/Room-Booking-System/static/js/main.f7681320.chunk.js.map",
+    "main.js": "/Room-Booking-System/static/js/main.833854bd.chunk.js",
+    "main.js.map": "/Room-Booking-System/static/js/main.833854bd.chunk.js.map",
     "runtime~main.js": "/Room-Booking-System/static/js/runtime~main.a92db90d.js",
     "runtime~main.js.map": "/Room-Booking-System/static/js/runtime~main.a92db90d.js.map",
     "static/css/2.c51b6406.chunk.css": "/Room-Booking-System/static/css/2.c51b6406.chunk.css",
-    "static/js/2.95edb178.chunk.js": "/Room-Booking-System/static/js/2.95edb178.chunk.js",
-    "static/js/2.95edb178.chunk.js.map": "/Room-Booking-System/static/js/2.95edb178.chunk.js.map",
+    "static/js/2.545cdcfb.chunk.js": "/Room-Booking-System/static/js/2.545cdcfb.chunk.js",
+    "static/js/2.545cdcfb.chunk.js.map": "/Room-Booking-System/static/js/2.545cdcfb.chunk.js.map",
     "index.html": "/Room-Booking-System/index.html",
-    "precache-manifest.268cc770ef75e91d69700b335812b0f4.js": "/Room-Booking-System/precache-manifest.268cc770ef75e91d69700b335812b0f4.js",
+    "precache-manifest.7cd612caf830ca43ed397e17ec398162.js": "/Room-Booking-System/precache-manifest.7cd612caf830ca43ed397e17ec398162.js",
     "service-worker.js": "/Room-Booking-System/service-worker.js",
     "static/css/2.c51b6406.chunk.css.map": "/Room-Booking-System/static/css/2.c51b6406.chunk.css.map",
-    "static/css/main.c9938009.chunk.css.map": "/Room-Booking-System/static/css/main.c9938009.chunk.css.map"
+    "static/css/main.c9938009.chunk.css.map": "/Room-Booking-System/static/css/main.c9938009.chunk.css.map",
+    "static/media/logo.png": "/Room-Booking-System/static/media/logo.73467b44.png"
   }
 }
