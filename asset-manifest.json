@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Room-Booking-System/static/css/main.2e698bfe.chunk.css",
+    "main.css": "/Room-Booking-System/static/css/main.74c3dcfb.chunk.css",
     "main.js": "/Room-Booking-System/static/js/main.73107f1c.chunk.js",
     "main.js.map": "/Room-Booking-System/static/js/main.73107f1c.chunk.js.map",
     "runtime~main.js": "/Room-Booking-System/static/js/runtime~main.a92db90d.js",
@@ -9,9 +9,9 @@
     "static/js/2.95edb178.chunk.js": "/Room-Booking-System/static/js/2.95edb178.chunk.js",
     "static/js/2.95edb178.chunk.js.map": "/Room-Booking-System/static/js/2.95edb178.chunk.js.map",
     "index.html": "/Room-Booking-System/index.html",
-    "precache-manifest.897e66528b254acb2e0b469703add333.js": "/Room-Booking-System/precache-manifest.897e66528b254acb2e0b469703add333.js",
+    "precache-manifest.9d31e22793b9a51c194f1ec7c5a5b96f.js": "/Room-Booking-System/precache-manifest.9d31e22793b9a51c194f1ec7c5a5b96f.js",
     "service-worker.js": "/Room-Booking-System/service-worker.js",
     "static/css/2.c51b6406.chunk.css.map": "/Room-Booking-System/static/css/2.c51b6406.chunk.css.map",
-    "static/css/main.2e698bfe.chunk.css.map": "/Room-Booking-System/static/css/main.2e698bfe.chunk.css.map"
+    "static/css/main.74c3dcfb.chunk.css.map": "/Room-Booking-System/static/css/main.74c3dcfb.chunk.css.map"
   }
 }
