@@ -3,8 +3,10 @@ import Tooltip from 'react-tooltip';
 import { Overlay, Navbar, Tabs, Pagination, Tab, Card, CardDeck, FormControl, InputGroup, Dropdown, DropdownButton, Button } from 'react-bootstrap';
 import img from './../conference_room.jpeg';
 import Form from 'react-bootstrap/FormGroup';
-
+import Timeline from 'react-calendar-timeline';
 import logo from './../logo.png';
+import moment from 'moment'
+import 'react-calendar-timeline/lib/Timeline.css';
 class MeetingRooms extends React.Component {
     constructor(props) {
         super(props);
@@ -91,6 +93,7 @@ class MeetingRooms extends React.Component {
         );
     }
     getRoomInfoFromDataTip(dataTip) {
+
         const tooltip = this.state.content.card.tooltip_titles;
         if (dataTip == null) return;
         const [locationIndex, roomIndex] = dataTip.split('|');
@@ -104,7 +107,7 @@ class MeetingRooms extends React.Component {
                     {tooltip["li-1"].map((item) => <tr><td className="left-td">{item.show}:</td><td> {room[item.name]}</td></tr>)}
                     {tooltip["li-2"].map((item) =>
                         <tr><td className="left-td" valign="top">{item.show}:</td> <td valign="top">
-                            {room[item.name].length != 0 ?
+                            {room[item.name].length !== 0 ?
                                 <p>{room[item.name].map((time) => <strong>{time}<br /></strong>)}</p> : <div>Not available</div>}
                         </td></tr>)}
                 </tbody>
@@ -118,10 +121,10 @@ class MeetingRooms extends React.Component {
         items.push(<Pagination.First onClick={() => {
             this.setState({ currentPage: 1 });
         }} />)
-        items.push(<Pagination.Prev disabled={currentPage == 1 ? true : false} onClick={() => {
+        items.push(<Pagination.Prev disabled={currentPage === 1 ? true : false} onClick={() => {
             this.setState((prevState, props) => ({ currentPage: prevState.currentPage - 1 }));
         }} />);
-        let max = 100;//parseInt(this.state.roomlist[Number(this.state.currentlocation)].rooms.length / this.state.maxRoom + 1);
+        let max = parseInt(this.state.roomlist[Number(this.state.currentlocation)].rooms.length / this.state.maxRoom + 1);
         this.getPaginationFromPageNumbers(items, 1, 1);
         var start;
         if (currentPage > 5) {
@@ -174,8 +177,7 @@ class MeetingRooms extends React.Component {
         right = right > size ? size : right;
         //console.log(item.rooms);
         let items = [];
-        for (var roomIndex = left; roomIndex < right; roomIndex++) {
-            var room = item.rooms[roomIndex];
+        item.rooms.slice(left, right).map((room, roomIndex) => {
             items.push(<div className="room-grid">
                 <Card border="primary" style={{ cursor: "pointer" }}
                     id={room.roomid}
@@ -216,7 +218,7 @@ class MeetingRooms extends React.Component {
                 />
 
             </div >)
-        }
+        })
         return items;
 
     }

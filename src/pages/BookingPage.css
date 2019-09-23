@@ -1,6 +1,7 @@
 
 #BookingPage{
     position: absolute;
+    padding: 1%;
     left:2%;
     right:2%;
     height:120%;
@@ -9,6 +10,7 @@
 
 #BookingPage .left{
     padding:1%;
+    max-width: 380px;
     width:27%;
     height:100%;
     float:left;
@@ -67,6 +69,7 @@
 
 #BookingPage .MeetingRooms{
     width:70%;
+    min-width: calc(95% - 380px);
     height:100%;
     float:right;
     position: relative;
@@ -146,6 +149,7 @@
     #BookingPage .left{
         width:100%;
         height:auto;
+        /* display: none; */
     }
     #BookingPage .MyReservation{
         width:100%;

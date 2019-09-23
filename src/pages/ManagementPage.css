@@ -2,6 +2,7 @@
     position: absolute;
     height:100%;
     width:100%;
+    min-width: 1200px;
 }
 #ManagementPage  .room-grid{
     width:25%;
@@ -13,25 +14,41 @@
 .table{
     margin-bottom: 0;
 }
+
+.hourcell{
+    padding:0;
+}
 #ManagementPage #NavBar{
-    height:10%;
+    height:10% !important;
 
 }
 
+#ScheduleTable table{
+    height:1vh;
+}
+
+#ScheduleTable td,th{
+    padding:0.75em;
+}
+
+#ScheduleTable th{
+    text-align: center;
+}
 #ManagementPage .row{
     height:90%;
     position: relative;
-    
-    
+    width:100%;   
 }
-
+#ManagementPage #left-side{
+    margin:2%;
+}
 #ManagementPage .left{
-    transition-timing-function: ease;
-    transition-duration: 2s;
     text-align: center;
-    
-
+    margin: 0 auto;
 }
+
+
+
 #ManagementPage  #CardDeck{
     padding:5%;
     height:100%;
@@ -39,11 +56,18 @@
     
 
 }
+#ManagementPage #CardContainer{
+    border-style: solid;
+}
+
+#ManagementPage  .room-grid .card-body{
+    padding-right: 2%;
+}
 #ManagementPage .ToggleButton{
     display:none;
 }
 
-#ManagementPage .right{
+#ManagementPage #right-side{
     padding:2.5%;
     padding-bottom: 5%;
     min-height:200px;
@@ -66,6 +90,10 @@
 @media screen and (max-width:887px){
     #ManagementPage{
         height:auto;
+        min-width: 0;
+    }
+    #ManagementPage #left-side{
+        width:100%;
     }
     #ManagementPage .ToggleButton{
         display:block;

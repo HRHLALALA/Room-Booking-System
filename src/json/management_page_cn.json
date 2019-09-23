@@ -21,6 +21,10 @@
             "show": "保存"
         }
     ],
+    "schedule": {
+      "name":"schedule",
+      "show":"时间表"  
+    },
     "search": {
         "name": "search",
         "show": "Search"

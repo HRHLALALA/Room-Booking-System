@@ -21,6 +21,14 @@
             "show": "Saved"
         }
     ],
+    "schedule": {
+        "name": "schedule",
+        "show": "Schedule"
+    },
+    "search": {
+        "name": "search",
+        "show": "Search"
+    },
     "toggle": {
         "name": "toggle",
         "value": "Toggle Menue"

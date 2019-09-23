@@ -4,15 +4,17 @@ import MyReservation from './../Component/myReservation';
 import MeetingRooms from './../Component/MeetingRooms';
 import './BookingPage.css';
 import ReservationForm from './../Component/ReservationForm';
-import { Modal, Navbar } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import roomlist from './../json/room.json';
 import content_en from './../json/reservation_page_loading_en.json';
 import content_cn from './../json/reservation_page_loading_cn.json';
-import logo from './../logo.png';
+
+
 class BookingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            update: false,
             date: new Date(),
             modalIsOpen: false,
             roomlist: roomlist,
@@ -20,6 +22,29 @@ class BookingPage extends React.Component {
         }
         this.closeModal = this.closeModal.bind(this);
     }
+
+    componentDidUpdate() {
+        if (this.state.update) {
+            //todo update fetch
+
+            this.setState({
+                update: false,
+            })
+        }
+    }
+
+    componentDidMount() {
+        // options = {
+        //     method: 'GET',
+        // }
+        // fetch(url + path, options)
+        //     .then(res => res.json())
+        //     .then((data) => {
+
+        //     })
+
+    }
+
     onChange = date => this.setState({ date })
     render() {
         const content = this.state.language_code === 0 ? content_en : content_cn;
@@ -86,6 +111,7 @@ class BookingPage extends React.Component {
     handleCalendarClick(date) {
         // Todo Fetch code for calendar click
         // update meeting room
+        console.log(date);
     }
 
     handleMeetingRoomCardClick(index) {
@@ -99,17 +125,6 @@ class BookingPage extends React.Component {
         this.setState({
             modalIsOpen: false,
         });
-    }
-    componentDidMount() {
-        // options = {
-        //     method: 'GET',
-        // }
-        // fetch(url + path, options)
-        //     .then(res => res.json())
-        //     .then((data) => {
-
-        //     })
-
     }
 }
 

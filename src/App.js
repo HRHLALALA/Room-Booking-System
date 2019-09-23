@@ -7,14 +7,8 @@ import { Navbar } from 'react-bootstrap';
 function App() {
   return (
     <div className="App">
-      <Navbar id="logoBar-mobile" expand="sm" >
-        <Navbar.Brand href="#home">
-          <img src={logo}>
-          </img>
-        </Navbar.Brand>
-      </Navbar>
-      <BookingPage />
-      {/* <ManagementPage /> */}
+      {/* <BookingPage /> */}
+      <ManagementPage />
     </div>
   );
 }

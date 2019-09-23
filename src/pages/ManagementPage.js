@@ -5,11 +5,16 @@ import './ManagementPage.css';
 import Tooltip from 'react-tooltip';
 import content_en from './../json/management_page_en.json';
 import content_cn from './../json/management_page_cn.json';
+import ScheduleTable from './../Component/scheduleTable';
+import 'react-calendar-timeline/lib/Timeline.css';
+import logo from './../logo.png';
+
 class ManagementPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isDialogOpen: false,
+            isTimeTable: false,
             showMenu: true,
             action: content_cn.modal.approve,
             reservations: reservations,
@@ -24,17 +29,21 @@ class ManagementPage extends React.Component {
     render() {
         const content = this.state.content;
         return (<div id="ManagementPage">
-            <Navbar bg="light" expand="lg" id="NavBar">
-                <Navbar.Brand href="#home">Home</Navbar.Brand>
+            <Navbar expand="lg" id="NavBar">
+                <Navbar.Brand href="#home"> <img src={logo}></img> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav fill variant="tabs" defaultActiveKey={content.nav[0].name}>
                         {content.nav.map((item) => <Nav.Item>
-                            <Nav.Link eventKey={item.name}>{item.show}</Nav.Link>
+                            <Nav.Link onClick={() => { this.setState({ isTimeTable: false }) }}
+                                eventKey={item.name}>{item.show}</Nav.Link>
                         </Nav.Item>
                         )}
-
+                        <Nav.Item>
+                            <Nav.Link onClick={() => { this.setState({ isTimeTable: true }) }}
+                                eventKey={content.schedule.name}>{content.schedule.show}</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                     <Form className="ml-auto" inline>
                         <InputGroup className="mb-3">
@@ -49,16 +58,16 @@ class ManagementPage extends React.Component {
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
-            <Tab.Container id="CardContainer" defaultActiveKey="0" >
+            {!this.state.isTimeTable ? <Tab.Container id="CardContainer" defaultActiveKey="0" >
                 <Row>
-                    {this.state.showMenu && <Col sm={2} className="left"   >
+                    {this.state.showMenu && <Col sm={2} id="left-side"   >
                         <Nav variant="pills" className="flex-column" >
                             {this.getReservationTabCard()[0]}
 
                         </Nav>
 
                     </Col>}
-                    <Col sm={9} className="right" >
+                    <Col sm={9} id="right-side" >
                         <Button variant="outline-primary"
                             className="ToggleButton"
                             onClick={() => {
@@ -80,12 +89,24 @@ class ManagementPage extends React.Component {
                         </div>
                     </Col>
                 </Row>
-            </Tab.Container>
+            </Tab.Container> : <div>
+                    <ScheduleTable />
+                </div>
+            }
             <Modal show={this.state.isDialogOpen} onHide={this.closeDialog}>
                 <Modal.Header closeButton>
                     <Modal.Title>{this.state.action.title}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body> {this.state.action.body}</Modal.Body>
+                <Modal.Body>
+                    <Form>
+                        <Form.Group >
+                            <Form.Label>Please enter the comment to confirm:</Form.Label>
+                            <Form.Control
+                                as="textarea" maxLength="500"
+                            />
+                        </Form.Group>
+                    </Form>
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="outline-primary" >
                         {content.modal.buttons.confirm.show}
@@ -104,12 +125,14 @@ class ManagementPage extends React.Component {
         this.state.reservations.map((item, locationIndex) => {
             navItems.push(
                 <Nav.Item>
-                    <Nav.Link onClick={() => {
-                        this.setState({
-                            currentlocation: locationIndex,
-                            currentPage: 1,
-                        })
-                    }} eventKey={locationIndex}>{item.location}</Nav.Link>
+                    <Nav.Link
+                        className="left"
+                        onClick={() => {
+                            this.setState({
+                                currentlocation: locationIndex,
+                                currentPage: 1,
+                            })
+                        }} eventKey={locationIndex}>{item.location}</Nav.Link>
                 </Nav.Item>
             );
             panes.push(
@@ -121,6 +144,7 @@ class ManagementPage extends React.Component {
         });
         return [navItems, panes];
     }
+
     getRoomTabCard(item) {
         const content = this.state.content;
         let items = [];
@@ -139,28 +163,26 @@ class ManagementPage extends React.Component {
                             <Card.Text>
                                 <Table borderless size="sm" responsive="sm">
                                     <tr>
-                                        <td width="55%">{content.card.date.show}</td>
+                                        <td >{content.card.date.show}</td>
                                         <td>{room.date}</td>
                                     </tr>
                                     <tr>
-                                        <td width="50%">{content.card.location.show}</td>
+                                        <td>{content.card.location.show}</td>
                                         <td>{room.location}</td>
                                     </tr>
                                     <tr data-tip={room.duration} data-for="Duration">
-                                        <td width="50%">{content.card.duration.show}</td>
+                                        <td >{content.card.duration.show}</td>
                                         <td>See more </td>
                                     </tr>
 
-                                </Table>
-                                <Table borderless size="sm" responsive="sm">
+
                                     <tr>
-                                        <td id="ngroups" width="auto">{content.card.ngroup.show}</td>
+                                        <td id="ngroups">{content.card.ngroup.show}</td>
                                         <td>{room.ngroups}</td>
                                     </tr>
-                                </Table>
-                                <Table borderless size="sm" responsive="sm">
+
                                     <tr>
-                                        <td width="55%">{content.card.repeat.show}</td>
+                                        <td >{content.card.repeat.show}</td>
                                         <td>{room.repeat}</td>
                                     </tr>
                                     <tr>
@@ -232,8 +254,6 @@ class ManagementPage extends React.Component {
             disabled={currentPage === max ? true : false}
 
             onClick={() => {
-                console.log(currentPage);
-                console.log(max);
                 this.setState((prevState, props) => ({ currentPage: prevState.currentPage + 1 }));
             }} />)
 
