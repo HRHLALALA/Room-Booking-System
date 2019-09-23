@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a80f18671dcb5ca91b64c6d2bfa28a8",
+    "revision": "d0fa90ad4fdfdeb51f9ee1fc081af9f7",
     "url": "/Room-Booking-System/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Room-Booking-System/static/css/2.5ea88a1c.chunk.css"
   },
   {
-    "revision": "329fd67b292b9e99db4d",
-    "url": "/Room-Booking-System/static/css/main.ef54254c.chunk.css"
+    "revision": "b9163c4f010e00a67fe0",
+    "url": "/Room-Booking-System/static/css/main.1fa3d6b6.chunk.css"
   },
   {
     "revision": "7ca9a943ea9358bf37a4",
     "url": "/Room-Booking-System/static/js/2.a23a36ba.chunk.js"
   },
   {
-    "revision": "329fd67b292b9e99db4d",
-    "url": "/Room-Booking-System/static/js/main.3d81bad4.chunk.js"
+    "revision": "b9163c4f010e00a67fe0",
+    "url": "/Room-Booking-System/static/js/main.856d3003.chunk.js"
   },
   {
     "revision": "dda05b6bb9edcbb710ab",
