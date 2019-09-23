@@ -59,36 +59,36 @@ class ManagementPage extends React.Component {
                 </Navbar.Collapse>
             </Navbar>
             {!this.state.isTimeTable ? <Tab.Container id="CardContainer" defaultActiveKey="0" >
-                <Row>
-                    {this.state.showMenu && <Col sm={2} id="left-side"   >
-                        <Nav variant="pills" className="flex-column" >
-                            {this.getReservationTabCard()[0]}
 
-                        </Nav>
+                {this.state.showMenu && <Col sm={2} id="left-side"   >
+                    <Nav variant="pills" className="flex-column" >
+                        {this.getReservationTabCard()[0]}
 
-                    </Col>}
-                    <Col sm={9} id="right-side" >
-                        <Button variant="outline-primary"
-                            className="ToggleButton"
-                            onClick={() => {
-                                this.setState((prev, event) => {
-                                    return { showMenu: !prev.showMenu };
-                                })
-                            }}>
-                            {content.toggle.show}
-                        </Button>
-                        <Tab.Content>
-                            {this.getReservationTabCard()[1]}
+                    </Nav>
 
-                        </Tab.Content>
-                        <div id="Pagination-block" >
+                </Col>}
+                <Col sm={9} id="right-side" >
+                    <Button variant="outline-primary"
+                        className="ToggleButton"
+                        onClick={() => {
+                            this.setState((prev, event) => {
+                                return { showMenu: !prev.showMenu };
+                            })
+                        }}>
+                        {content.toggle.show}
+                    </Button>
+                    <Tab.Content>
+                        {this.getReservationTabCard()[1]}
 
-                            <Pagination size="sm" id="Pagination">
-                                {this.getPagination()}
-                            </Pagination>
-                        </div>
-                    </Col>
-                </Row>
+                    </Tab.Content>
+                    <div id="Pagination-block" >
+
+                        <Pagination size="sm" id="Pagination">
+                            {this.getPagination()}
+                        </Pagination>
+                    </div>
+                </Col>
+
             </Tab.Container> : <div>
                     <ScheduleTable />
                 </div>
