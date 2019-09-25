@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Room-Booking-System/static/css/main.ea165148.chunk.css",
-    "main.js": "/Room-Booking-System/static/js/main.5edde513.chunk.js",
-    "main.js.map": "/Room-Booking-System/static/js/main.5edde513.chunk.js.map",
+    "main.css": "/Room-Booking-System/static/css/main.7ae33a85.chunk.css",
+    "main.js": "/Room-Booking-System/static/js/main.9a7a5405.chunk.js",
+    "main.js.map": "/Room-Booking-System/static/js/main.9a7a5405.chunk.js.map",
     "runtime~main.js": "/Room-Booking-System/static/js/runtime~main.a92db90d.js",
     "runtime~main.js.map": "/Room-Booking-System/static/js/runtime~main.a92db90d.js.map",
-    "static/css/2.5ea88a1c.chunk.css": "/Room-Booking-System/static/css/2.5ea88a1c.chunk.css",
-    "static/js/2.a23a36ba.chunk.js": "/Room-Booking-System/static/js/2.a23a36ba.chunk.js",
-    "static/js/2.a23a36ba.chunk.js.map": "/Room-Booking-System/static/js/2.a23a36ba.chunk.js.map",
+    "static/css/2.481f244f.chunk.css": "/Room-Booking-System/static/css/2.481f244f.chunk.css",
+    "static/js/2.c94f5faa.chunk.js": "/Room-Booking-System/static/js/2.c94f5faa.chunk.js",
+    "static/js/2.c94f5faa.chunk.js.map": "/Room-Booking-System/static/js/2.c94f5faa.chunk.js.map",
     "index.html": "/Room-Booking-System/index.html",
-    "precache-manifest.20175ebd75d71f615a4adac10448980b.js": "/Room-Booking-System/precache-manifest.20175ebd75d71f615a4adac10448980b.js",
+    "precache-manifest.1a3d8efa64a43d9b3e93cd253f7cdf92.js": "/Room-Booking-System/precache-manifest.1a3d8efa64a43d9b3e93cd253f7cdf92.js",
     "service-worker.js": "/Room-Booking-System/service-worker.js",
-    "static/css/2.5ea88a1c.chunk.css.map": "/Room-Booking-System/static/css/2.5ea88a1c.chunk.css.map",
-    "static/css/main.ea165148.chunk.css.map": "/Room-Booking-System/static/css/main.ea165148.chunk.css.map",
+    "static/css/2.481f244f.chunk.css.map": "/Room-Booking-System/static/css/2.481f244f.chunk.css.map",
+    "static/css/main.7ae33a85.chunk.css.map": "/Room-Booking-System/static/css/main.7ae33a85.chunk.css.map",
     "static/media/logo.png": "/Room-Booking-System/static/media/logo.73467b44.png"
   }
 }
