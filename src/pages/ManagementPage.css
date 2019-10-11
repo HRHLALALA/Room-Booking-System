@@ -5,6 +5,7 @@
     min-width: 1200px;
 }
 
+
 #ManagementPage #left-side{
     margin:2%;
     float:left;
@@ -42,7 +43,7 @@
 
 #ManagementPage #NavBar{
     height:10% !important;
-
+    width:100%;
 }
 
 #ManagementPage .row{
@@ -75,32 +76,111 @@
     
 }
 
-.hourcell{
+#ScheduleTable {
+    width: 100%;
+    /* border-style: dashed; */
+    bottom: 0;
+
+}
+
+#ScheduleTable .schedule-time-picker{
+    position: relative;
+    float:right;
+    margin-right:3%;
+    margin-bottom:10px;
+    z-index:3;
+    
+}
+
+
+#ScheduleTable #ScheduleTable-middle{
+    position: relative;
+    height:1000px;
+    width:94%;
+    margin-left:3%;
+    overflow: auto;
+    
+}
+
+#ScheduleTable .outer-table.first{
+    position: relative;
+    width:100%;
+    table-layout: fixed;
+   
+}
+
+#ScheduleTable .outer-table.second{
+    z-index: 1;
+    left: 0;
+    position: absolute;
+    table-layout: fixed;
+}
+
+#ScheduleTable #timetable-outer{
+    border-width: 1px;
+}
+
+#ScheduleTable .col-axis{
+    height:2em;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+
+#ScheduleTable #event-slot-table{
+    table-layout: fixed;
+    position: absolute;
+}
+#ScheduleTable #event-slot-table td{
     padding:0;
 }
-
-#ScheduleTable table{
-    height:1vh;
-    width:100%;
+#ScheduleTable .event-slot-wrap{
+    z-index: 2;
+    position: relative;
 }
 
-#ScheduleTable td,th{
-    padding:0.75em;
-}
 
+#ScheduleTable .event-slot{
+    position: absolute;
+    opacity:0.7;
+    background-color:red;
+    overflow: hidden;
+    left:0;
+    right:0;
+}
+#ScheduleTable .event-slot:hover{
+    background-color:yellow;
+}
 #ScheduleTable th{
     text-align: center;
+    
+}
+#ScheduleTable tr{
+    text-align: center;
+    
 }
 
-@media screen and (max-width:887px){
+@media screen and (max-width:992px){
     #ManagementPage{
         height:auto;
         min-width: 0;
     }
-    #ManagementPage #left-side{
-        width:100%;
+    #ManagementPage  .room-grid{
+        width:50%;
+        min-width: 200px;
+        margin-bottom: 20px;
+        
     }
     
+}
+
+@media screen and (max-width:572px){
+    #ManagementPage #left-side{
+        border-style: dashed;
+        margin: 0 auto;
+      
+    }
+
     #ManagementPage .ToggleButton{
         display:block;
         width:100%;
@@ -110,7 +190,6 @@
         height:100%;
         width:100%;
         
-        
     }
 
     #ManagementPage  .room-grid{
@@ -118,5 +197,9 @@
         min-width: 200px;
         margin-bottom: 20px;
         
+    }
+    #ScheduleTable .outer-table td,
+    #ScheduleTable .outer-table th{
+        width:5rem;
     }
 }

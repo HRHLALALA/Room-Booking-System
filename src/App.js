@@ -7,8 +7,8 @@ import { Navbar } from 'react-bootstrap';
 function App() {
   return (
     <div className="App">
-      {/* <BookingPage /> */}
-      <ManagementPage />
+      <BookingPage />
+      {/* <ManagementPage /> */}
     </div>
   );
 }

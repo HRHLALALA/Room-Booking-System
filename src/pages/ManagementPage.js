@@ -172,7 +172,7 @@ class ManagementPage extends React.Component {
                                     </tr>
                                     <tr data-tip={room.duration} data-for="Duration">
                                         <td >{content.card.duration.show}</td>
-                                        <td>See more </td>
+                                        <td className="tooltip-place">See more </td>
                                     </tr>
 
 
@@ -191,7 +191,7 @@ class ManagementPage extends React.Component {
                                     </tr>
                                     <tr data-tip={room.comments} data-for="Curation">
                                         <td >{content.card.comment.show}</td>
-                                        <td>see more</td>
+                                        <td className="tooltip-place">see more</td>
                                     </tr>
 
                                 </Table>
