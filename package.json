@@ -10,7 +10,7 @@
     "gh-pages": "^2.1.1",
     "interact.js": "^1.2.8",
     "interactjs": "^1.6.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.9.0",
     "react-big-scheduler": "^0.2.7",
     "react-bootstrap": "^1.0.0-beta.12",
